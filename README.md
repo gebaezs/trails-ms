@@ -17,14 +17,14 @@ trails-ms
 
 --> TRAER TODAS LAS RUTAS DE UN USUARIO (usertrail --> es el ID del usuario)
     |
-    |-->   (GET)  -- http://192.168.99.101:3002/categories/user/{ usertrail }
+    |-->   (GET)  -- http://192.168.99.101:3002/trails/user/{ usertrail }
 
 
 
 
 --> CREA UNA RUTA
     |
-    |-->   (POST)  -- http://192.168.99.101:3002/categories
+    |-->   (POST)  -- http://192.168.99.101:3002/trails
     |
     |-->   (BODY)   |
                     V
@@ -40,21 +40,21 @@ trails-ms
 
 --> TRAE LA RUTA DE UN ID EN ESPECIFICO (ID --> es el ID de la base de datos ejemplo = 5d013616fb689d0001d1ccd9)
     |
-    |-->   (POST)  -- http://192.168.99.101:3002/categories/{ ID }
+    |-->   (POST)  -- http://192.168.99.101:3002/trails/{ ID }
 
 
 
 
 --> TRAE LA RUTA DE UN ID EN ESPECIFICO (ID --> es el ID de la base de datos ejemplo = 5d013616fb689d0001d1ccd9)
     |
-    |-->   (GET)  -- http://192.168.99.101:3002/categories/{ ID }
+    |-->   (GET)  -- http://192.168.99.101:3002/trails/{ ID }
 
 
 
 
 --> BORRAR LA RUTA DE UN ID EN ESPECIFICO (ID --> es el ID de la base de datos ejemplo = 5d013616fb689d0001d1ccd9)
     |
-    |-->   (DELETE)  -- http://192.168.99.101:3002/categories/{ ID }
+    |-->   (DELETE)  -- http://192.168.99.101:3002/trails/{ ID }
 
 
 
