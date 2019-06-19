@@ -2,9 +2,9 @@ package dao
 
 import (
 	"fmt"
-	"io/ioutil"
+	// "io/ioutil"
 	"log"
-	"mime/multipart"
+	// "mime/multipart"
 	"strconv"
 
 	. "trails-ms/models"
@@ -69,7 +69,7 @@ func (m *TrailsDAO) FindTrailsByUser(id string) ([]Trail, error) {
 
 // ==============================================================================================
 // OBTIENE UNA RUTA EN ESPECIFICO
-func (m *TrailsDAO) FindTrailById(id string) (Category, error) {
+func (m *TrailsDAO) FindTrailById(id string) (Trail, error) {
 	var trail Trail
 	err := DB.C("trails").FindId(bson.ObjectIdHex(id)).One(&trail)
 	return trail, err
